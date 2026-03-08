@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para vocee meu amorrr ❤️</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:linear-gradient(180deg,#ff4d6d,#ff758f);
+color:white;
+text-align:center;
+overflow-x:hidden;
+}
+
+/* tela de entrada */
+
+#entrada{
+position:fixed;
+width:100%;
+height:100vh;
+background:linear-gradient(180deg,#ff4d6d,#ff758f);
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+z-index:10;
+overflow:hidden;
+}
+
+#entrada button{
+padding:18px 45px;
+font-size:24px;
+border:none;
+border-radius:30px;
+background:white;
+color:#ff4d6d;
+cursor:pointer;
+transition:0.3s;
+}
+
+#entrada button:hover{
+transform:scale(1.1);
+}
+
+/* coração grande */
+
+.coracao-grande{
+font-size:80px;
+animation:batida 1.2s infinite;
+margin-bottom:20px;
+}
+
+@keyframes batida{
+0%{transform:scale(1);}
+50%{transform:scale(1.25);}
+100%{transform:scale(1);}
+}
+
+/* corações flutuando na entrada */
+
+.heart-entrada{
+position:absolute;
+color:white;
+animation:flutuar linear forwards;
+opacity:0.7;
+}
+
+@keyframes flutuar{
+0%{
+transform:translateY(100vh);
+opacity:0;
+}
+50%{
+opacity:1;
+}
+100%{
+transform:translateY(-10vh);
+opacity:0;
+}
+}
+
+#site{
+display:none;
+}
+
+header{
+padding:70px 20px;
+}
+
+h1{
+font-size:45px;
+}
+
+.contador{
+font-size:24px;
+margin-top:20px;
+background:rgba(255,255,255,0.15);
+padding:18px;
+border-radius:12px;
+display:inline-block;
+}
+
+section{
+padding:70px 20px;
+}
+
+.carta{
+max-width:800px;
+margin:auto;
+font-size:22px;
+line-height:1.5;
+background:rgba(255,255,255,0.15);
+padding:35px;
+border-radius:15px;
+}
+
+.carta p{
+margin:0;
+}
+
+.galeria{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+max-width:1000px;
+margin:auto;
+}
+
+.galeria img{
+width:100%;
+border-radius:15px;
+box-shadow:0 0 10px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.galeria img:hover{
+transform:scale(1.07);
+}
+
+footer{
+padding:50px;
+font-size:20px;
+}
+
+/* corações subindo */
+
+.coracao{
+position:fixed;
+bottom:-20px;
+color:white;
+animation:subir linear forwards;
+}
+
+@keyframes subir{
+to{
+transform:translateY(-110vh);
+opacity:0;
+}
+}
+
+/* rastro do mouse */
+
+.rastro{
+position:fixed;
+pointer-events:none;
+font-size:20px;
+animation:sumir 1s forwards;
+}
+
+@keyframes sumir{
+to{
+opacity:0;
+transform:translateY(-20px);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="entrada">
+
+<div class="coracao-grande">❤️</div>
+
+<h1>Tenho uma surpresa pra vocee amorr ❤️</h1>
+
+<button onclick="entrar()">❤️ Entrarr ❤️</button>
+
+</div>
+
+<div id="site">
+
+<header>
+
+<h1>Feliz dia das mulheress meu amorrr ❤️</h1>
+
+<p>Hoje é o seu diaaa minha princesaa</p>
+
+<div class="contador" id="contador"></div>
+
+</header>
+
+<section>
+
+<h2>Uma mensagem pra vocee 💌</h2>
+
+<div class="carta">
+
+<p>Hoje é o dia das mulheress e eu precisava fazer algo especial pra vocee meu amorrr.</p>
+<p>Vocee é uma mulher incrívelll, forteee, lindaa e que merece tudo de bomm nesse mundo.</p>
+<p>Eu tenho muita sorte de ter vocee na minha vidaaa.</p>
+<p>Vocee ilumina meus diass e faz minha vida ser muito mais felizzz.</p>
+<p>Feliz dia das mulheress meu amorrr ❤️</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Porque vocee é incrívelll 👑</h2>
+
+<div class="carta">
+
+<p>Porque vocee é forteee</p>
+<p>Porque vocee é inteligentee</p>
+<p>Porque vocee é lindaa</p>
+<p>porque vc é prftaaaaaa</p>
+<p>porque vc é humildeee</p>
+<p>porque vc é legalll</p>
+<p>porque vc é inteligenteee</p>
+<p>porque vc é engraçadaaaa</p>
+<p>Porque vocee tem um coração enormeee</p>
+<p>E pricipalmentee, porque vocee é o amorrr da minha vidaaa ❤️</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Nossa história ❤️⏳</h2>
+
+<div class="carta">
+
+<p>14/10/2024 — o dia que nossa história começouu</p>
+<p>Os encontros na praçaaa</p>
+<p>Nossas primeiras risadass</p>
+<p>Nossos momentos juntoss</p>
+<p>E ainda teremoss uma vida inteiraa juntoss</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Nossos sonhos 🌎</h2>
+
+<div class="carta">
+
+<p>VIAJARR MTOOOO</p>
+<p>TERMOS A NOSSA CASINHAAA</p>
+<p>TER MUITA COISA PRA CONTARRR</p>
+<p>REALIZAR TODOS OS NOSSSOS SONHOSSS</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Nossas fotos juntosss 📸</h2>
+
+<div class="galeria">
+
+<img src="WhatsApp Image 2026-03-08 at 00.05.29.jpeg">
+<img src="WhatsApp Image 2026-03-08 at 00.05.28.jpeg">
+<img src="WhatsApp Image 2026-03-08 at 00.01.31.jpeg">
+<img src="WhatsApp Image 2026-03-08 at 00.01.30.jpeg">
+<img src="WhatsApp Image 2026-03-07 at 23.59.32.jpeg">
+
+</div>
+
+</section>
+
+<footer>
+
+<p>felizzz diaaa das mulheresssss meu amorrr ❤️</p>
+
+</footer>
+
+</div>
+
+<script>
+
+function entrar(){
+document.getElementById("entrada").style.display="none";
+document.getElementById("site").style.display="block";
+}
+
+/* contador */
+
+function atualizarContador(){
+
+const inicio = new Date("2024-10-14");
+const hoje = new Date();
+
+const diff = hoje - inicio;
+
+const dias = Math.floor(diff/(1000*60*60*24));
+const horas = Math.floor(diff/(1000*60*60)%24);
+const minutos = Math.floor(diff/(1000*60)%60);
+
+document.getElementById("contador").innerHTML =
+"Estamos juntoss há <b>"+dias+"</b> diass, <b>"+horas+"</b> horass e <b>"+minutos+"</b> minutoss ❤️";
+
+}
+
+setInterval(atualizarContador,1000);
+atualizarContador();
+
+/* corações subindo */
+
+function criarCoracao(){
+
+const coracao = document.createElement("div");
+coracao.classList.add("coracao");
+coracao.innerHTML="❤️";
+
+coracao.style.left=Math.random()*100+"vw";
+coracao.style.fontSize=(Math.random()*20+10)+"px";
+coracao.style.animationDuration=(Math.random()*4+3)+"s";
+
+document.body.appendChild(coracao);
+
+setTimeout(()=>{
+coracao.remove();
+},6000);
+
+}
+
+setInterval(criarCoracao,400);
+
+/* rastro do mouse */
+
+document.addEventListener("mousemove",function(e){
+
+const heart=document.createElement("div");
+
+heart.className="rastro";
+heart.innerHTML="❤️";
+
+heart.style.left=e.clientX+"px";
+heart.style.top=e.clientY+"px";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},1000);
+
+});
+
+/* corações flutuando na tela de entrada */
+
+function coracoesEntrada(){
+
+const heart=document.createElement("div");
+
+heart.className="heart-entrada";
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+heart.style.fontSize=(Math.random()*30+20)+"px";
+heart.style.animationDuration=(Math.random()*5+5)+"s";
+
+document.getElementById("entrada").appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},10000);
+
+}
+
+setInterval(coracoesEntrada,500);
+
+</script>
+
+</body>
+</html>
